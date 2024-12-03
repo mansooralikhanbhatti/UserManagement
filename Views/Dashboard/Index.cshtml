@@ -1,0 +1,37 @@
+﻿@model DashboardViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container-fluid mt-4">
+    <h2>Dashboard</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Users</h5>
+                    <h2 class="card-text">@Model.TotalUsers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Active Users</h5>
+                    <h2 class="card-text">@Model.ActiveUsers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Inactive Users</h5>
+                    <h2 class="card-text">@Model.InactiveUsers</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
